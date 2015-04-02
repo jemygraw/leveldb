@@ -17,9 +17,9 @@ leveldb是一个Key-Value数据库。因为其优秀的性能，被广泛地应�
 
 |命令|描述|示例|
 |------|---------|--------|
-|leveldb -create = <LevelDB Path>|创建leveldb数据库|leveldb -create = /Users/jemy/Data/test.ldb|
-|leveldb -import = <LevelDB Path> -data = <Data File Path>|导入数据到leveldb|leveldb -import = /Users/jemy/Data/test.ldb -data = /Users/jemy/Data/test.txt|
-|leveldb -export = <LevelDB Path>|从leveldb导出数据|leveldb -export = /Users/jemy/Data/test.ldb >> test.dat|
+|create|创建leveldb数据库|leveldb -create = /Users/jemy/Data/test.ldb|
+|import|导入数据到leveldb|leveldb -import = /Users/jemy/Data/test.ldb -data = /Users/jemy/Data/test.txt|
+|export|从leveldb导出数据|leveldb -export = /Users/jemy/Data/test.ldb >> test.dat|
 
 备注：
-基于工具的简单性，导入的数据文件按行格式为`key\tvalue`，导出的内容为`key\tvalue`。不支持其他的分隔符。
+基于工具的简单性，导入的数据文件按行格式为key`\t`value，导出的内容为key`\t`value。不支持其他的分隔符。
