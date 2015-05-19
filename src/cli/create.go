@@ -11,7 +11,7 @@ func Create(cmd string, params ...string) {
 	if len(params) == 1 {
 		path := params[0]
 		if _, statErr := os.Stat(path); statErr == nil {
-			fmt.Println("LevelDB `", path, "' exists, plz delete first!")
+			fmt.Println("LevelDB ", path, " exists, plz delete it first!")
 			return
 		}
 		ldb, err := leveldb.OpenFile(path, nil)

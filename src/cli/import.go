@@ -13,11 +13,11 @@ func Import(cmd string, params ...string) {
 		dbPath := params[0]
 		dataPath := params[1]
 		if _, statErr := os.Stat(dbPath); statErr != nil {
-			fmt.Println("LevelDB `", dbPath, "' doesn't exist")
+			fmt.Println("LevelDB ", dbPath, " doesn't exist")
 			return
 		}
 		if _, statErr := os.Stat(dataPath); statErr != nil {
-			fmt.Println("Data file `", dataPath, "' doesn't exist")
+			fmt.Println("Data file ", dataPath, " doesn't exist")
 			return
 		}
 		ldb, lerr := leveldb.OpenFile(dbPath, nil)

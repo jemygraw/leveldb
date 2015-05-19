@@ -10,7 +10,7 @@ func Export(cmd string, params ...string) {
 	if len(params) == 1 {
 		dbPath := params[0]
 		if _, statErr := os.Stat(dbPath); statErr != nil {
-			fmt.Println("LevelDB `", dbPath, "' doesn't exist")
+			fmt.Println("LevelDB ", dbPath, " doesn't exist")
 			return
 		}
 		ldb, lerr := leveldb.OpenFile(dbPath, nil)
