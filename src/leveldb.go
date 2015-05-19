@@ -16,10 +16,12 @@ func main() {
 
 	var lexport string
 
+	var lcount string
 	flag.StringVar(&lcreate, "create", "", "leveldb path")
 	flag.StringVar(&limport, "import", "", "leveldb path")
 	flag.StringVar(&limportData, "data", "", "data to import")
 	flag.StringVar(&lexport, "export", "", "leveldb path")
+	flag.StringVar(&lcount, "count", "", "leveldb path")
 
 	flag.Usage = func() {
 		cli.Help()
@@ -36,5 +38,7 @@ func main() {
 	} else if lexport != "" {
 		cli.Export("export", []string{lexport}...)
 		return
+	} else if lcount != "" {
+		cli.Count("count", []string{lcount}...)
 	}
 }
