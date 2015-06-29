@@ -19,7 +19,7 @@ leveldb是一个Key-Value数据库。因为其优秀的性能，被广泛地应�
 |------|---------|--------|
 |create|创建leveldb数据库|leveldb -create='/Users/jemy/Data/test.ldb' |
 |import|导入数据到leveldb|leveldb -import='/Users/jemy/Data/test.ldb' -data='/Users/jemy/Data/test.txt' |
-|export|从leveldb导出数据|leveldb -export= '/Users/jemy/Data/test.ldb' >> test.dat|
+|export|从leveldb导出数据|leveldb -export='/Users/jemy/Data/test.ldb' >> test.dat|
 |count|计算leveldb数据条目数量|leveldb -count='/Users/jemy/Data/test.ldb' |
 
 备注：
