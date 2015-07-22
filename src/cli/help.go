@@ -27,7 +27,7 @@ var cmdExample = map[string]string{
 
 func Help(cmds ...string) {
 	if len(cmds) == 0 {
-		fmt.Println("leveldb v1.0:\r\n")
+		fmt.Println("leveldb v1.1:\r\n")
 		for cmd, desc := range cmdDesc {
 			fmt.Println(" ", cmd)
 			fmt.Println("\tDesc:", desc)
