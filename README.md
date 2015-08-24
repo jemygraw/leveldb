@@ -9,7 +9,7 @@ leveldb是一个Key-Value数据库。因为其优秀的性能，被广泛地应�
 
 |版本     |支持平台|链接|
 |--------|---------|----|
-|leveldb v1.1|Linux, Windows, Mac OSX|[下载](http://7rfgu2.com1.z0.glb.clouddn.com/leveldb_v1.1.zip)|
+|leveldb v1.1|Linux, Windows, Mac OSX|[下载](http://devtools.qiniu.com/leveldb-v1.1.zip)|
 
 ###使用
 该工具支持leveldb的创建，数据导入和数据导出，以及数据条目的数量计算，所以一共有4个命令。
