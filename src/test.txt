@@ -1,2 +1,0 @@
-/Users/jemy/Temp7/f1/world.txt => 2015/01/18/x/world.txt	Y
-/Users/jemy/Temp7/hello.txt => 2015/01/18/x/hello.txt	Y
