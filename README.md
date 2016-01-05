@@ -17,10 +17,10 @@ leveldb是一个Key-Value数据库。因为其优秀的性能，被广泛地应�
 
 |命令|描述|示例|
 |------|---------|--------|
-|create|创建leveldb数据库|leveldb -create='/Users/jemy/Data/test' |
-|import|导入数据到leveldb|leveldb -import='/Users/jemy/Data/test' -data='/Users/jemy/Data/test.txt' |
-|export|从leveldb导出数据|leveldb -export='/Users/jemy/Data/test' >> test.dat|
-|count|计算leveldb数据条目数量|leveldb -count='/Users/jemy/Data/test' |
+|create|创建leveldb数据库|leveldb -create '/Users/jemy/Data/test' |
+|import|导入数据到leveldb|leveldb -import '/Users/jemy/Data/test' -data '/Users/jemy/Data/test.txt' |
+|export|从leveldb导出数据|leveldb -export '/Users/jemy/Data/test' >> test.dat|
+|count|计算leveldb数据条目数量|leveldb -count '/Users/jemy/Data/test' |
 
 备注：
 基于工具的简单性，导入的数据文件按行格式为key`\t`value，导出的内容为key`\t`value。不支持其他的分隔符。
